@@ -34,17 +34,8 @@ pip install pandas numpy scikit-learn xgboost matplotlib seaborn
 4) Evaluation: Models are evaluated based on their accuracy, precision, recall, and F1-score to understand their effectiveness.
 
 ## Running the Project
-Navigate to the project directory and run the script file:
+Navigate to the project directory and run the codes inside jupyter notebook.
 
-bash
-Copy code
-python heart_disease_prediction.py
-Contributing
-Contributions are welcome! For major changes, please open an issue first to discuss what you would like to change. Ensure to update tests as appropriate.
-
-License
-Distributed under the MIT License. See LICENSE for more information.
-
-Acknowledgements
+## Acknowledgements
 UCI Machine Learning Repository for providing the dataset.
 Scikit-learn and XGBoost communities for excellent documentation and APIs.
