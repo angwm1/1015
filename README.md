@@ -26,28 +26,28 @@ The data for this project comes from the UCI Machine Learning Repository and can
 
    To solve this, we performed the following:
 
-       1. **Handling Missing Values**: For numerical features ('trestbps', 'chol', 'thalch', 'oldpeak', 'ca'), missing values were imputed using the median strategy.
+       -1. **Handling Missing Values**: For numerical features ('trestbps', 'chol', 'thalch', 'oldpeak', 'ca'), missing values were imputed using the median strategy.
             For categorical features ('sex', 'cp', 'fbs', 'restecg', 'exang', 'slope', 'thal'), missing values were imputed using the most frequent strategy.
-       2. **Outlier Detection and Handling**: Outliers in numerical features were identified using the interquartile range (IQR) method.
+       -2. **Outlier Detection and Handling**: Outliers in numerical features were identified using the interquartile range (IQR) method.
             Outliers were replaced with boundary values to ensure data integrity.
-       3. **Feature Encoding**: Categorical features were one-hot encoded to convert them into numerical format for machine learning algorithms.
-       4. **Data Standardization/Normalization**: Numerical features were standardized using the StandardScaler to ensure all features have a mean of 0 and standard deviation of 1.
+       -3. **Feature Encoding**: Categorical features were one-hot encoded to convert them into numerical format for machine learning algorithms.
+       -4. **Data Standardization/Normalization**: Numerical features were standardized using the StandardScaler to ensure all features have a mean of 0 and standard deviation of 1.
 
 ## 2. Exploratory Data Analysis
    We engaged in Exploratory Data Analysis (EDA) to uncover patterns, examine the distributions of success and explore potential relationships between them. This step was crucial for gaining insights and informing our research question
 
    To achieve this we did the following:
 
-       1. **Univariate Analysis of Numerical Features**:
+       -1. **Univariate Analysis of Numerical Features**:
             Explored distributions of numerical features (age, trestbps, chol, thalach, oldpeak). Visualized distributions using histograms with KDE (Kernel Density Estimation).
-       2. **Distribution of Categorical Features**: Visualized distributions of categorical features (sex, cp, fbs, restecg, exang, slope, thal). Used countplots to show the frequency of each category.
-       3. **Multivariate Analysis**: Examined relationships among numerical features and their connection with the target variable using a pairplot. 
+       -2. **Distribution of Categorical Features**: Visualized distributions of categorical features (sex, cp, fbs, restecg, exang, slope, thal). Used countplots to show the frequency of each category.
+       -3. **Multivariate Analysis**: Examined relationships among numerical features and their connection with the target variable using a pairplot. 
             Explored an in-depth analysis of the relationship between categorical characteristics and the occurrence of heart disease using a percent-stacked bar chart
-       4. **Correlation Analysis**: 
-       5. **Chi-Squared Test**: Applied chi-squared tests for each variable against the target variable 'num_category' to evaluate the significance of their association. 
+       -4. **Correlation Analysis**: 
+       -5. **Chi-Squared Test**: Applied chi-squared tests for each variable against the target variable 'num_category' to evaluate the significance of their association. 
             -For age group, the chi-squared statistic was 143.72 with a p-value of approximately 1.06e-24, indicating a significant association with heart disease occurrence.
             -The chi-squared test for cholesterol group yielded a statistic of 39.81 and a p-value of approximately 3.47e-06, indicating a significant association with heart disease.
-       6. **Analysis of Variance (ANOVA)**: Conducted separate ANOVA tests for each variable to examine their influence on heart disease occurrence. 
+       -6. **Analysis of Variance (ANOVA)**: Conducted separate ANOVA tests for each variable to examine their influence on heart disease occurrence. 
             Utilized the F-statistic and p-value to determine the significance of the relationship between each variable and heart disease.
             -For age, the ANOVA test yielded an F-statistic of 31.23 with a p-value of approximately 2.11e-24, indicating a significant association with heart disease.
             -Thalach exhibited an F-statistic of 42.15 and a p-value of approximately 1.80e-32, indicating a significant relationship with heart disease occurrence.
@@ -57,31 +57,20 @@ The data for this project comes from the UCI Machine Learning Repository and can
   
    To achieve this we did the following:
 
-       1.** Principal Component Analysis (PCA)**: Applied preprocessing steps to scale numerical features and encode categorical features. Visualized the first two principal components to gain insights into the data's variance and distribution.
+       -1.** Principal Component Analysis (PCA)**: Applied preprocessing steps to scale numerical features and encode categorical features. Visualized the first two principal components to gain insights into the data's variance and distribution.
             There is overlap between the two groups, regions with larger principal component 1 tend to have a higher concentration of individuals with heart disease.
-       2.**Random Forest Classifier**: Split the dataset into training and testing sets to evaluate the model's accuracy and generalization. Performed hyperparameter tuning using grid search to optimize the model's performance.
+       -2.**Random Forest Classifier**: Split the dataset into training and testing sets to evaluate the model's accuracy and generalization. Performed hyperparameter tuning using grid search to optimize the model's performance.
            When evaluated on the test set, the model demonstrated exceptional accuracy, achieving a score of 1.0. The classification report indicates perfect precision, recall, and F1-scores for both classes, with a macro and weighted average F1-score of 1.0.
-       3. **Learning Curve**: The learning curve provides valuable insights into how the model's performance evolves as it learns from increasingly larger portions of the training data. It also helps to identify potential issues such as overfitting or underfitting.
-       3.**XGBoost Classifier**: Trained an XGBoost model to classify instances of heart disease.
-       4.**Employed SHAP (SHapley Additive exPlanations)**: To explain the model's predictions and visualize feature importance. Identified the top important features contributing to the model's predictions
+       -3. **Learning Curve**: The learning curve provides valuable insights into how the model's performance evolves as it learns from increasingly larger portions of the training data. It also helps to identify potential issues such as overfitting or underfitting.
+       -4.**XGBoost Classifier**: Trained an XGBoost model to classify instances of heart disease.
+       -5.**Employed SHAP (SHapley Additive exPlanations)**: To explain the model's predictions and visualize feature importance. Identified the top important features contributing to the model's predictions
            Top 5 important features:cp_asymptomatic, chol,oldpeak, sex_Female, thalch
-       5.**Decision Tree Classifier**: Utilized a Decision Tree Classifier to classify instances of heart disease using only the top 5 important features. Evaluated the model's accuracy with the selected features.
+       -6.**Decision Tree Classifier**: Utilized a Decision Tree Classifier to classify instances of heart disease using only the top 5 important features. Evaluated the model's accuracy with the selected features.
            The decision tree model trained on the top 5 important features, correctly predicts the presence or absence of heart disease in approximately 77.7% of the test samples.
-       6.**Logistic Regression**: Trained a Logistic Regression model on the top 5 important features to classify instances of heart disease. Calculated the accuracy of the model on the test data.
+       -7.**Logistic Regression**: Trained a Logistic Regression model on the top 5 important features to classify instances of heart disease. Calculated the accuracy of the model on the test data.
            An accuracy of 0.788 means that the Logistic Regression model correctly predicted the presence or absence of heart disease in approximately 78.8% of the samples in the test dataset
     
-## Usage
-1) Data Preparation: The initial raw dataset undergoes several preprocessing steps:
-    - Missing values are handled.
-    - Outlier detection and replacement.
-    - Feature encoding and scaling.
-2) Exploratory Data Analysis (EDA): This includes visualizations for both univariate and multivariate analysis to understand the distributions and relationships in the data.
-3) Model Building: We use several machine learning models to predict heart disease:
-    - Random Forest Classifier
-    - Logistic Regression
-    - Decision Tree Classifier
-    - XGBoost Classifier
-4) Evaluation: Models are evaluated based on their accuracy, precision, recall, and F1-score to understand their effectiveness.
+
 
 ## 4. Conclusion
    In conclusion, our analysis aimed to predict heart disease occurrence and understand the factors influencing it. We meticulously cleaned and prepared the data, addressing issues like missing values and outliers. Exploratory Data Analysis revealed significant 
