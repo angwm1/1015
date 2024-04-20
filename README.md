@@ -67,7 +67,8 @@ The data for this project comes from the UCI Machine Learning Repository and can
        -6.**Decision Tree Classifier**: Utilized a Decision Tree Classifier to classify instances of heart disease using only the top 5 important features. Evaluated the model's accuracy with the selected features.
            The decision tree model trained on the top 5 important features, correctly predicts the presence or absence of heart disease in approximately 77.7% of the test samples.
        -7.**Logistic Regression**: Trained a Logistic Regression model on the top 5 important features to classify instances of heart disease. Calculated the accuracy of the model on the test data.
-           An accuracy of 0.788 means that the Logistic Regression model correctly predicted the presence or absence of heart disease in approximately 78.8% of the samples in the test dataset
+           An accuracy of 0.788 means that the Logistic Regression model correctly predicted the presence or absence of heart disease in approximately 78.8% of the samples in the test dataset  
+
     
 
 
