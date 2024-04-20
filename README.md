@@ -24,14 +24,13 @@ The data for this project comes from the UCI Machine Learning Repository and can
 ## 1. Data Cleaning & Preparation
    In this project phase, we meticulously prepared and cleaned the dataset to optimize data analysis and facilitate subsequent machine learning tasks, but a major issue was the incompleteness and inconsistency of the data.
 
-   To solve this, we performed the following:
-
-       -1. **Handling Missing Values**: For numerical features ('trestbps', 'chol', 'thalch', 'oldpeak', 'ca'), missing values were imputed using the median strategy.
+   *To solve this, we performed the following:
+    -1. **Handling Missing Values**: For numerical features ('trestbps', 'chol', 'thalch', 'oldpeak', 'ca'), missing values were imputed using the median strategy.
             For categorical features ('sex', 'cp', 'fbs', 'restecg', 'exang', 'slope', 'thal'), missing values were imputed using the most frequent strategy.
-       -2. **Outlier Detection and Handling**: Outliers in numerical features were identified using the interquartile range (IQR) method.
+   -2. **Outlier Detection and Handling**: Outliers in numerical features were identified using the interquartile range (IQR) method.
             Outliers were replaced with boundary values to ensure data integrity.
-       -3. **Feature Encoding**: Categorical features were one-hot encoded to convert them into numerical format for machine learning algorithms.
-       -4. **Data Standardization/Normalization**: Numerical features were standardized using the StandardScaler to ensure all features have a mean of 0 and standard deviation of 1.
+    -3. **Feature Encoding**: Categorical features were one-hot encoded to convert them into numerical format for machine learning algorithms.
+    -4. **Data Standardization/Normalization**: Numerical features were standardized using the StandardScaler to ensure all features have a mean of 0 and standard deviation of 1.
 
 ## 2. Exploratory Data Analysis
    We engaged in Exploratory Data Analysis (EDA) to uncover patterns, examine the distributions of success and explore potential relationships between them. This step was crucial for gaining insights and informing our research question
