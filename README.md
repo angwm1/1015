@@ -63,13 +63,13 @@ To achieve this, we did the following:
    
 5. **Chi-Squared Test**:
    - Applied chi-squared tests for each variable against the target variable 'num_category' to evaluate the significance of their association.
-     - For age group, the chi-squared statistic was 143.72 with a p-value of approximately 1.06e-24, indicating a significant association with heart disease occurrence.
-     - The chi-squared test for cholesterol group yielded a statistic of 39.81 and a p-value of approximately 3.47e-06, indicating a significant association with heart disease.
+     - For age group, the chi-squared statistic was 143.72 with a p-value of approximately 1.06e^-24, indicating a significant association with heart disease occurrence.
+     - The chi-squared test for cholesterol group yielded a statistic of 39.81 and a p-value of approximately 3.47e^-06, indicating a significant association with heart disease.
 
 6. **Analysis of Variance (ANOVA)**:
    - Conducted separate ANOVA tests for each variable to examine their influence on heart disease occurrence.
-     - For age, the ANOVA test yielded an F-statistic of 31.23 with a p-value of approximately 2.11e-24, indicating a significant association with heart disease.
-     - Thalach exhibited an F-statistic of 42.15 and a p-value of approximately 1.80e-32, indicating a significant relationship with heart disease occurrence.
+     - For age, the ANOVA test yielded an F-statistic of 31.23 with a p-value of approximately 2.11e^-24, indicating a significant association with heart disease.
+     - Thalach exhibited an F-statistic of 42.15 and a p-value of approximately 1.80e^-32, indicating a significant relationship with heart disease occurrence.
 
 ## 3. Machine Learning Techniques
 
@@ -93,10 +93,11 @@ To achieve this, we did the following:
    - To explain the model's predictions and visualize feature importance. Identified the top important features contributing to the model's predictions. Top 5 important features: cp_asymptomatic, chol, oldpeak, sex_Female, thalch.
 
 6. **Decision Tree Classifier**:
-   - Utilized a Decision Tree Classifier to classify instances of heart disease using only the top 5 important features. Evaluated the model's accuracy with the selected features. The decision tree model trained on the top 5 important features correctly predicts the presence or absence of heart disease in approximately 77.7% of the test samples.
+   - Utilized a Decision Tree Classifier to classify instances of heart disease using only the top 5 important features. Evaluated the model's accuracy with the selected features. The decision tree model trained on the top 5 important features correctly predicts the presence or absence of heart disease in approximately 80.9% of the test samples.
 
 7. **Logistic Regression**:
    - Trained a Logistic Regression model on the top 5 important features to classify instances of heart disease. Calculated the accuracy of the model on the test data. An accuracy of 0.788 means that the Logistic Regression model correctly predicted the presence or absence of heart disease in approximately 78.8% of the samples in the test dataset.
+   - ROC AUC of 0.87, the logistic regression model demonstrates strong discriminative power. This indicates that the model is effective in correctly ranking the predicted probabilities of heart disease, with a higher probability assigned to individuals who actually have heart disease compared to those who do not
 
 
     
