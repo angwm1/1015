@@ -6,8 +6,8 @@ This is a Mini-Project for SC1015 - Introduction to Data Science and Artificial 
 ## Contributors
 
 - **Jiang Li Kai** - Data Cleaning & Preparation, EDA, Machine Learning
-- **Heng Zeng Xi** - Machine Learning, Data-Driven Insights, Presentation, Readme
-- **Ang Wei Ming** - Reasoning For Data Cleaning, Insights on EDA, Slides
+- **Heng Zeng Xi** - Machine Learning, Data-Driven Insights, Presentation, Slides, Readme
+- **Ang Wei Ming** - Reasoning For Data Cleaning, Insights on EDA
 
 
 
