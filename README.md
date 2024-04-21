@@ -109,7 +109,7 @@ To achieve this, we did the following:
 
   Machine learning models, including PCA and Random Forest Classifier, demonstrated high accuracy in predicting heart disease. The learning curve analysis provided insights into model performance. SHAP values highlighted key features contributing to predictions.
  
-  Notably, the Chi-Squared Test and ANOVA unveiled striking associations between age, cholesterol levels, and heart disease occurrence. With chi-squared statistics of 143.72 and 39.81, and p-values of approximately 1.06e-24 and 3.47e-06, respectively, these tests 
+  Notably, the Chi-Squared Test and ANOVA unveiled striking associations between age, cholesterol levels, and heart disease occurrence. With chi-squared statistics of 143.72 and 39.81, and p-values of approximately 1.06e^-24 and 3.47e^-06, respectively, these tests 
   underscored the importance of age-related factors and cardiovascular health indicators in predicting heart disease.
 
   Overall, our analysis offers valuable insights into heart disease prediction, emphasizing the importance of early detection and intervention strategies.
