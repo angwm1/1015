@@ -60,13 +60,19 @@ To achieve this, we did the following:
    - Explored an in-depth analysis of the relationship between categorical characteristics and the occurrence of heart disease using a percent-stacked bar chart.
 
 4. **Correlation Analysis**
+    - Age showed a significant positive correlation (0.34) with disease severity and a negative correlation (-0.35) with maximum heart rate.
+    - Resting blood pressure exhibited a positive correlation (0.30) with age.
+    - Cholesterol levels showed a modest positive correlation (0.22) with maximum heart rate.
+    - Exercise-induced ST depression correlated strongly (0.41) with disease severity, indicating its importance in prognostic assessments.
+    - These insights highlight the complex interplay of factors influencing heart disease and can inform predictive models and clinical interventions aimed at reducing cardiovascular risks.
+  
    
-5. **Chi-Squared Test**:
+6. **Chi-Squared Test**:
    - Applied chi-squared tests for each variable against the target variable 'num_category' to evaluate the significance of their association.
      - For age group, the chi-squared statistic was 143.72 with a p-value of approximately 1.06e^-24, indicating a significant association with heart disease occurrence.
      - The chi-squared test for cholesterol group yielded a statistic of 39.81 and a p-value of approximately 3.47e^-06, indicating a significant association with heart disease.
 
-6. **Analysis of Variance (ANOVA)**:
+7. **Analysis of Variance (ANOVA)**:
    - Conducted separate ANOVA tests for each variable to examine their influence on heart disease occurrence.
      - For age, the ANOVA test yielded an F-statistic of 31.23 with a p-value of approximately 2.11e^-24, indicating a significant association with heart disease.
      - Thalach exhibited an F-statistic of 42.15 and a p-value of approximately 1.80e^-32, indicating a significant relationship with heart disease occurrence.
