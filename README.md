@@ -110,15 +110,15 @@ To achieve this, we did the following:
 
 
 ## 4. Conclusion
-  In conclusion, our analysis aimed to predict heart disease occurrence and understand the factors influencing it. We meticulously cleaned and prepared the data, addressing issues like missing values and outliers. Exploratory Data Analysis revealed significant 
-  associations between age, cholesterol levels, and heart disease.
+  Our analysis found significant associations between age, cholesterol levels, and heart disease.
 
   Machine learning models, including PCA and Random Forest Classifier, demonstrated high accuracy in predicting heart disease. The learning curve analysis provided insights into model performance. SHAP values highlighted key features contributing to predictions.
  
-  Notably, the Chi-Squared Test and ANOVA unveiled striking associations between age, cholesterol levels, and heart disease occurrence. With chi-squared statistics of 143.72 and 39.81, and p-values of approximately 1.06e^-24 and 3.47e^-06, respectively, these tests 
-  underscored the importance of age-related factors and cardiovascular health indicators in predicting heart disease.
+  Chi-Squared Test statistics of 143.72 and p-value 1.06e^-24 and ANOVA F-statistic of 31.226 and p-values 3.47e^-06, unveiled striking associations between age, cholesterol levels, and heart disease occurrence.
 
-  Overall, our analysis offers valuable insights into heart disease prediction, emphasizing the importance of early detection and intervention strategies.
+  Decision trees and Logistic regression achieve satisfactory predictive accuracy of 81% and 77% respectively while maintaining model simplicity, highlighting the importance of feature selection and model optimization for practical applications.
+
+Our analysis enhances heart disease prediction knowledge, highlighting interdisciplinary approaches in healthcare research. By integrating advanced methods, we improve risk assessment and intervention strategies, ultimately enhancing patient outcomes and healthcare delivery.
 
 
 
